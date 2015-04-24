@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>2efb7964-3b6d-4e23-b315-ab5b0575d295</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Yam</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Game1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GamePage.xaml.cs">
+      <DependentUpon>GamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)TextureSelectorComponent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WorldRenderingComponent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)GamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Content\1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\10.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\11.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\12.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\13.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\14.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\15.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\3.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\4.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\5.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\6.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\7.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\8.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\9.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\cross.png" />
+  </ItemGroup>
+</Project>
