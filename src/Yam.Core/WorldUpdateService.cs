@@ -61,6 +61,7 @@ namespace Yam.Core
                 connection = new Connection(new Uri(BaseUri, "api/notifications").AbsoluteUri);
                 connection.Received += OnReceived;
                 await connection.Start();
+                await connection.Send("set-world:" + WorldId);
             });
         }
 
